@@ -4,27 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Example</title>
+    <title>--ShopOnline--</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
+
     <header>
-        <div id="logo">
-            <img src="images/logo1.png" alt="logo">
-        </div>
-        
-        <div id="slogan">
+        <div id="bienvenida">
             <h2>Bienvenido</h2>
-            <h3>Al sitio de ventas online más grande del Paraguay</h3>
+            <h3>Al sitio de ventas online más grande del Paraguay</h3>    
         </div>
-
-        <div id="info-user">
-                usuario
+        <div id="user-info">
+                <img src="images/carrito.png" class="carrito"> <br>
+                <span id="items">0</span> Items <br>
+                <span id="usr">Usuario:</span>
+                <!--<br>Salir-->
         </div>
+    </header><!--fin header-->
 
-    </header>
     <div id="content">
-        <div id="barra-lateral">
+        <div id="login" class="barra-lateral">
             <form action="#" method="get" id="form-registro">
                 <h3>Identifícate</h3>
                 <div>
@@ -37,8 +36,9 @@
                 </div>
                 <input type="submit" value="Entrar" class="btn">
             </form>
-        </div>
-        <div id="central">
+        </div><!--fin barra lateral-->
+
+        <div id="principal" class="central">
             <h3>¿Estás buscando un producto?</h3>
             <form action="#">
                 <div id="buscar" >
@@ -47,37 +47,42 @@
                 </div>
                 
             </form>
-        </div>
-        <div id ="destacados">
-            <h3>Destacados</h3>
+        </div><!--fin central-->
+
+        <div id="destacados" class="barra-lateral">
+            <div class="titulo">
+                <h3>Destacados</h3>
+            </div>
             <table>
                 <tr>
                     <td>
-                        <b>TV TCL 55'</b><br>500$<br>
+                        <b>TV TCL 55'</b><br> <span class="precio-viejo">600$</span> - 500$ <button class="btn">Agregar</button> <br>
                         <img src="images/tv4.jpg">
                    </td>
                 </tr>
                 <tr>
                     <td> 
-                        <b>TV LG UHD-65'</b><br>800$<br>
+                        <b>TV LG UHD-65'</b><br><span class="precio-viejo">950$</span> - 880$<button class="btn">Agregar</button> <br>
                         <img src="images/tv3.jpg">
                        </td>
                 </tr>
                 <tr><td>
-                        <b>Nintendo Switch</b><br>500$ <br> 
+                        <b>Nintendo Switch</b><br><span class="precio-viejo">650$</span> - 620$ <button class="btn">Agregar</button> <br> 
                     <img src="images/nintendo.jpg">
                    </td>
                     </tr>
                 <tr><td>
-                    <b>Iphone 6 PLus'</b><br>950$ <br> 
+                    <b>Iphone 6 PLus'</b><br><span class="precio-viejo">980$</span> - 920$<button class="btn">Agregar</button><br> 
                     <img src="images/iphone.jpg" >
                     </td></tr>
-
             </table>
-        </div>
-    </div>    
+           
+        </div><!--fin destacados-->
+    </div><!--fin content-->    
+
     <footer>
         &copy; 2018 - Todos los derechos reservados
-    </footer>    
+    </footer>
+    <script src="js/index.js"></script>    
 </body>
 </html>
