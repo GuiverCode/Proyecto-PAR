@@ -47,7 +47,15 @@ header{
 
 
 #form-registro div{
-    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+
+#form-registro div.advertencia{
+    margin-top:0px;
+}
+#form-registro .btn{
+    margin-top: 10px;
 }
 
 #form-registro input, label{
@@ -228,3 +236,14 @@ h3{
 li{ 
     margin-bottom: 12px;
 }
+
+.advertencia{
+    margin-left: 28px;
+    width: 167px;
+    background-color: #393e46;
+    color: white;
+    font-size: 13px;
+    padding-left: 5px;
+    border-radius: 2px; 
+}
+

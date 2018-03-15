@@ -21,19 +21,19 @@
                 <br> <a href="#" style="color:white">Salir</a> 
         </div>
     </header><!--fin header-->
-
+    <!--<section id = content>-->
     <div id="content">
         <div id="login" class="barra-lateral">
             <form action="#" method="get" id="form-registro">
                 <h3>Identifícate</h3>
                 <div>
                     <label for="user" class="etiqueta">Usuario:</label>
-                    <input type="text" name="username" id="user">
-                </div>
+                    <input type="text" name="username" id="user" data-requerido="si">
+                </div><div class="advertencia"></div>
                 <div>
                     <label for="pwd" class="etiqueta">Contraseña:</label>
-                    <input type="password" name="password" id="pwd">
-                </div>
+                    <input type="password" name="password" id="pwd" data-requerido="si">
+                </div><div class="advertencia"></div>
                 <input type="submit" value="Entrar" class="btn">
             </form>
         </div><!--fin barra lateral-->
@@ -183,6 +183,6 @@
     <footer>
         &copy; 2018 - Todos los derechos reservados
     </footer>
-        
+    <script src="js/validar-form.js"></script>
 </body>
 </html>
